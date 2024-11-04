@@ -1,0 +1,152 @@
+/*             COLOR PALETTE          */
+/* #6482AD Darker blue                */
+/* #7FA1C3 Blue          - Background */  
+/* #E2DAD6 Pastel                     */
+/* #F5EDED light pastel  - Background */
+
+/* #F1F6F9 Light     - Background     */
+/* #394867 Dark Blue-grey             */  
+/* #212A3E Darker Blue                */
+/* #9BA4B5 Light Grey                 */
+
+.presentation{
+    background-color: #394867;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.presentation p {
+    color: #9BA4B5;
+    font-size: 30px;
+}
+
+.container-presentation{
+    display: grid;
+    grid-template-columns: 450px 40px;
+    grid-template-rows: 55px 80px 30px;
+    gap: 2px;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.intro1 {
+    grid-column: span 2;
+}
+ 
+.intro3{
+    grid-column: span 2;
+}
+ 
+.intro1 h2 {
+   font-size: 57px;
+   color: #212A3E;
+}
+
+.intro2 h2{
+  font-size: 80px;
+  text-align: right;
+  color: #212A3E;
+}
+
+.name h1{
+  font-size: 85px;
+  color: #F1F6F9;
+}
+
+.showcase .about-me{
+    background-color: #F1F6F9 ;
+}
+
+.showcase h2 {
+    font-size: 50px;
+    color: #212A3E;
+}
+.showcase p {
+    font-size: 18px;
+    color:#394867
+}
+.showcase .row{
+    justify-content: center;
+}
+.showcase a{
+    color: #F1F6F9;
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #394867;
+    color:#f1f6f9;
+    border-color: #212A3E;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: #9BA4B5;
+    color: #F1F6F9;
+}
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    background-color: #212A3E;
+    
+}
+.about-me .divider{
+    border-bottom: 1px solid #212A3E;
+}
+
+.contact .divider{
+    border-top: 1px solid #212A3E;
+}
+
+.foot{
+    background-color: #394867;
+}
+.foot p, .teste {
+    color: #F1F6F9;
+}
+.domine-regular {
+  font-family: "Domine", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-sans-light {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+@media(width<600px) {
+    .container-presentation{
+        grid-template-columns: 300px 20px;
+        grid-template-rows: 35px 40px 30px;
+        justify-content: center;
+        text-align: center;
+        gap: 2px;
+    }
+
+    .intro1 h2 {
+        font-size: 35px;
+     }
+     
+     .intro2 h2{
+       font-size: 55px;
+       text-align: right;
+     }
+     .presentation p {
+        font-size: 35px;
+    }
+    .name h1{
+        font-size: 55px;
+      }
+
+}
